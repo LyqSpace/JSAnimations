@@ -83,6 +83,7 @@ function add_imgs() {
 
         $('#box').hide();
         $('#right-img').hide();
+        $('#right-img').attr('src', 'imgs/good-whole.jpg');
         
         // var keys = Object.keys(scores);
 
@@ -101,7 +102,6 @@ function add_imgs() {
     }, pause0);
 
     setTimeout(function () {
-        $('#right-img').attr('src', 'imgs/good-whole.jpg');
         $('#box').show();
         $('#right-img').show();
     }, pause0 + time_lapse)
