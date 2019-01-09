@@ -63,7 +63,7 @@ function add_imgs() {
         }).appendTo('#scores');
     }
 
-    $('#right-img').attr('src', 'imgs/img_list/bad.jpg');
+    $('#right-img').attr('src', 'imgs/bad-whole.jpg');
 
     // var scores_len = Object.keys(scores).length;
     // var pause_time_step = parseInt(time_lapse / (scores_len - 1));
@@ -82,6 +82,7 @@ function add_imgs() {
         }, time_lapse);
 
         $('#box').hide();
+        $('#right-img').hide();
         
         // var keys = Object.keys(scores);
 
@@ -100,8 +101,9 @@ function add_imgs() {
     }, pause0);
 
     setTimeout(function () {
-        $('#right-img').attr('src', 'imgs/img_list/good.jpg');
+        $('#right-img').attr('src', 'imgs/good-whole.jpg');
         $('#box').show();
+        $('#right-img').show();
     }, pause0 + time_lapse)
     
 
